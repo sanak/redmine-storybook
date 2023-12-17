@@ -1,9 +1,9 @@
 module.exports = {
-  "stories": [
+  stories: [
     "../src/stories/**/*.stories.mdx",
     "../src/stories/**/*.stories.@(js|jsx|ts|tsx)"
   ],
-  "addons": [
+  addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
@@ -12,8 +12,23 @@ module.exports = {
   staticDirs: [
     '../public'
   ],
-  "framework": "@storybook/html",
-  "core": {
-    "builder": "@storybook/builder-webpack5"
+  framework: {
+    name: "@storybook/html-webpack5",
+    options: {}
   },
+  webpackFinal: async (config) => {
+    const htmlLoader = config.module.rules.find(
+      (rule) => rule.test?.toString() === "/\\.html$/"
+    );
+    htmlLoader.use = {
+      loader: 'html-loader',
+      options: {
+        sources: false,
+      }
+    };
+    return config;
+  },
+  docs: {
+    autodocs: true
+  }
 }
