@@ -1,6 +1,5 @@
 module.exports = {
   stories: [
-    "../src/stories/**/*.stories.mdx",
     "../src/stories/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   addons: [
@@ -29,6 +28,6 @@ module.exports = {
     return config;
   },
   docs: {
-    autodocs: true
+    autodocs: false
   }
 }

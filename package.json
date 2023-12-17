@@ -18,8 +18,12 @@
     "@storybook/addon-links": "^7.6.5",
     "@storybook/addon-viewport": "^7.6.5",
     "@storybook/html": "^7.6.5",
+    "@storybook/html-webpack5": "^7.6.5",
     "@storybook/testing-library": "^0.2.2",
-    "babel-loader": "^8.2.5"
+    "babel-loader": "^8.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.5"
   },
   "files": [
     "package.json",
@@ -27,12 +31,5 @@
     "LICENSE",
     "src",
     "public"
-  ],
-  "devDependencies": {
-    "@babel/preset-env": "^7.23.6",
-    "@storybook/html-webpack5": "^7.6.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "storybook": "^7.6.5"
-  }
+  ]
 }
