@@ -31,5 +31,8 @@
     "LICENSE",
     "src",
     "public"
-  ]
+  ],
+  "devDependencies": {
+    "string-replace-loader": "^3.1.0"
+  }
 }
