@@ -1,0 +1,107 @@
+<div id="wrapper">
+    <div class="flyout-menu js-flyout-menu">
+        <div class="flyout-menu__search">
+            <form action="/search" accept-charset="UTF-8" name="form-00000001" method="get">
+
+                <label class="search-magnifier search-magnifier--flyout" for="flyout-search">&#9906;</label>
+                <input type="text" name="q" id="flyout-search" class="small js-search-input" placeholder="検索" />
+            </form>
+        </div>
+
+        <div class="flyout-menu__avatar ">
+            <a href="/users/1"><img alt="" title="Redmine Admin" class="gravatar" srcset="https://www.gravatar.com/avatar/cb4f282fed12016bd18a879c1f27ff97?rating=PG&amp;size=160&amp;default=retro 2x" src="https://www.gravatar.com/avatar/cb4f282fed12016bd18a879c1f27ff97?rating=PG&amp;size=80&amp;default=retro"/></a>
+            <a class="user active" href="/users/1">admin</a>
+        </div>
+
+        <h3>プロジェクト</h3>
+        <span class="js-project-menu"></span>
+
+        <h3>全般</h3>
+        <span class="js-general-menu"></span>
+
+        <span class="js-sidebar flyout-menu__sidebar"></span>
+
+        <h3>プロフィール</h3>
+        <span class="js-profile-menu"></span>
+    </div>
+
+    <div id="top-menu">
+        <div id="account">
+            <ul>
+                <li><a class="my-account" href="/my/account">個人設定</a></li>
+                <li><a class="logout" rel="nofollow" data-method="post" href="/logout">ログアウト</a></li>
+            </ul>
+        </div>
+        <div id="loggedas">ログイン中： <a class="user active" href="/users/1">admin</a></div>
+        <ul>
+            <li><a class="home" href="/">ホーム</a></li>
+            <li><a class="my-page" href="/my/page">マイページ</a></li>
+            <li><a class="projects" href="/projects">プロジェクト</a></li>
+            <li><a class="administration" href="/admin">管理</a></li>
+            <li><a target="_blank" rel="noopener" class="help" href="https://www.redmine.org/guide">ヘルプ</a></li>
+        </ul>
+    </div>
+
+    <div id="header">
+        <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+        <div id="quick-search">
+            <form action="/search" accept-charset="UTF-8" name="form-00000002" method="get">
+                <input type="hidden" name="scope" autocomplete="off" />
+
+                <label for='q'>
+                    <a accesskey="4" href="/search">検索</a>:
+                </label>
+                <input type="text" name="q" id="q" size="20" class="small" accesskey="f" data-auto-complete="true" />
+            </form>
+            <div id="project-jump" class="drdn"><span class="drdn-trigger">プロジェクトへ移動...</span>
+                <div class="drdn-content">
+                    <div class="quick-search">
+                        <input type="text" name="q" id="projects-quick-search" value="" class="autocomplete" data-automcomplete-url="/projects/autocomplete.js?jump=activity" autocomplete="off" />
+                    </div>
+                    <div class="drdn-items projects selection">
+                        <strong>最近使用したもの</strong><a title="test1" href="/projects/test1?jump=activity"><span style="padding-left:0px;">test1</span></a>
+                    </div>
+                    <div class="drdn-items all-projects selection">
+                        <a class="selected" href="/projects?jump=activity">全プロジェクト</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>Redmine</h1>
+    </div>
+
+    <div id="main" class="collapsiblesidebar">
+        <script>
+            //<![CDATA[
+            $('#main.collapsiblesidebar').collapsibleSidebar();
+            //]]>
+        </script>
+        <div id="sidebar">
+            <div id="sidebar-switch-panel" style="visibility: hidden;">
+                <a id="sidebar-switch-button" class="" href="#">
+                    <svg class="s20 icon-svg" aria-hidden="true">
+                        <use href="/assets/icons.svg#icon--chevrons-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <script>
+                //<![CDATA[
+                $('#sidebar-switch-panel').css('visibility', 'visible');
+                //]]>
+            </script>
+            <p>#sidebar</p>
+        </div>
+
+        <div id="content">
+            <p>#content</p>
+        </div>
+    </div>
+    <div id="footer">
+        Powered by <a target="_blank" rel="noopener" href="https://www.redmine.org/">Redmine</a> &copy; 2006-2024 Jean-Philippe Lang
+    </div>
+
+    <div id="ajax-indicator" style="display:none;"><span>ロード中...</span></div>
+    <div id="ajax-modal" style="display:none;"></div>
+</div>
