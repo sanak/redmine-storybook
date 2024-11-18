@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/assets/jquery/jquery-ui-1.13.2.css" media="all" />
+<link rel="stylesheet" href="/assets/tribute-5.1.3.css" media="all" />
+<link rel="stylesheet" href="/assets/application.css" media="all" />
+<link rel="stylesheet" href="/assets/responsive.css" media="all" />
+
+<script src="/assets/jquery-3.7.1-ui-1.13.3.js"></script>
+
+<script src="/assets/rails-ujs.js"></script>
+<script src="/assets/tribute-5.1.3.min.js"></script>
+<script src="/assets/tablesort-5.2.1.min.js"></script>
+<script src="/assets/tablesort-5.2.1.number.min.js"></script>
+
+<script src="/assets/application.js"></script>
+<script src="/assets/responsive.js"></script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    $.ready();
+
+    $('a').on('click', function (e) {
+      e.preventDefault();
+    })
+
+    $('form').on('submit', function (e) {
+      e.preventDefault();
+    })
+  })
+</script>
