@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - support-multiple-versions*
   workflow_dispatch:
 
 jobs:
