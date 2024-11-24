@@ -5,7 +5,9 @@
   "repository": "github:redmine-theme/storybook",
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "storybook6x": "storybook dev -c .storybook6x -p 6007",
+    "build-storybook6x": "storybook build -c .storybook6x -o storybook-static6x"
   },
   "keywords": [],
   "author": "Tsuyoshi Tsurushima",

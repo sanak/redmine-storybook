@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - support-multiple-versions*
   workflow_dispatch:
 
 jobs:
@@ -29,6 +30,9 @@ jobs:
         run: |
           npm run build-storybook
           node scripts/update-assets-paths.js storybook-static ${BASE_PATH}
+          npm run build-storybook6x
+          node scripts/update-assets-paths.js storybook-static6x "${BASE_PATH}/6x/"
+          mv storybook-static6x storybook-static/6x
 
       - uses: actions/upload-pages-artifact@v3
         with:
