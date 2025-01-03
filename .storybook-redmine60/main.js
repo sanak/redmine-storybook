@@ -6,7 +6,7 @@ const framework = process.env.BUILDER == 'vite' ? '@storybook/html-vite'
 
 export default {
   stories: [
-    "../src/6x/stories"
+    "../src/redmine60/stories"
   ],
 
   addons: [
@@ -15,7 +15,7 @@ export default {
 
   staticDirs: [
     { from: '../public/attachments', to: '/attachments' },
-    { from: '../src/6x/assets', to: '/assets' },
+    { from: '../src/redmine60/assets', to: '/assets' },
   ],
 
   framework: {
@@ -40,10 +40,10 @@ export default {
       ...config,
       resolve: {
         alias: {
-          '@': path.join(__dirname, '../src/6x/assets/')
+          '@': path.join(__dirname, '../src/redmine60/assets/')
         },
         roots: [
-          path.join(__dirname, '../src/6x/assets/'),
+          path.join(__dirname, '../src/redmine60/assets/'),
           path.join(__dirname, '../public')
         ]
       }
@@ -60,7 +60,7 @@ export default {
       ...config,
       resolve: {
         alias: {
-          '@/': path.join(__dirname, '../src/6x/assets/')
+          '@/': path.join(__dirname, '../src/redmine60/assets/')
         }
       },
       define: {
