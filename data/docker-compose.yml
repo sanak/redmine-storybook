@@ -1,0 +1,19 @@
+services:
+  redmine:
+    build:
+      context: ./docker/redmine50
+    ports:
+      - 3000:3000
+    volumes:
+      - ./config/database.yml:/usr/src/redmine/config/database.yml
+      - ./files:/usr/src/redmine/files
+      - ./fixtures:/usr/src/redmine/fixtures
+      - ./tasks:/usr/src/redmine/tasks
+      - ./plugins:/usr/src/redmine/plugins
+      - ./sqlite:/usr/src/redmine/sqlite
+      # - ./themes:/usr/src/redmine/public/themes # redmine < 6.0
+      # - ./themes:/usr/src/redmine/themes # redmine >= 6.0
+    environment:
+      REDMINE_DB_DATABASE: "sqlite/redmine50.db"
+      LD_PRELOAD: /usr/lib/aarch64-linux-gnu/faketime/libfaketime.so.1
+      FAKETIME: 2022-10-23 04:02:00

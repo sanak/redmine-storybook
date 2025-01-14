@@ -1,0 +1,6 @@
+production:
+  adapter: "sqlite3"
+  host: "localhost"
+  username: "redmine"
+  database: <%= ENV["REDMINE_DB_DATABASE"] || "sqlite/redmine.db" %>
+  encoding: "utf8"
