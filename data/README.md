@@ -7,6 +7,7 @@ RedmineのフィクスチャデータとDocker設定を管理するディレク�
 ## Dockerコンテナの起動
 
 ```sh
+cd data
 docker compose up
 ```
 
