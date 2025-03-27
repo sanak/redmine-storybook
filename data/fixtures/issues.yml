@@ -82,6 +82,7 @@ issues_005:
   lock_version: 7
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   done_ratio: 10
   root_id: 5
   lft: 1
@@ -99,6 +100,7 @@ issues_006:
   lock_version: 9
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   done_ratio: 10
   parent_id: 5
   root_id: 5
@@ -117,6 +119,7 @@ issues_007:
   lock_version: 4
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   done_ratio: 20
   parent_id: 6
   root_id: 5
@@ -254,6 +257,7 @@ issues_015:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 15
   lft: 1
   rgt: 2
@@ -269,6 +273,7 @@ issues_016:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 16
   lft: 1
   rgt: 2
@@ -284,6 +289,7 @@ issues_017:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 17
   lft: 1
   rgt: 2
@@ -299,6 +305,7 @@ issues_018:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 18
   lft: 1
   rgt: 2
@@ -314,6 +321,7 @@ issues_019:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 19
   lft: 1
   rgt: 2
@@ -329,6 +337,7 @@ issues_020:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 20
   lft: 1
   rgt: 2
@@ -344,6 +353,7 @@ issues_021:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 21
   lft: 1
   rgt: 2
@@ -359,6 +369,7 @@ issues_022:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 22
   lft: 1
   rgt: 2
@@ -374,6 +385,7 @@ issues_023:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 23
   lft: 1
   rgt: 2
@@ -389,6 +401,7 @@ issues_024:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 24
   lft: 1
   rgt: 2
@@ -404,6 +417,7 @@ issues_025:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 25
   lft: 1
   rgt: 2
@@ -419,6 +433,7 @@ issues_026:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 26
   lft: 1
   rgt: 2
@@ -434,6 +449,7 @@ issues_027:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 27
   lft: 1
   rgt: 2
@@ -449,6 +465,7 @@ issues_028:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 28
   lft: 1
   rgt: 2
@@ -464,6 +481,7 @@ issues_029:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 29
   lft: 1
   rgt: 2
@@ -479,6 +497,7 @@ issues_030:
   lock_version: 3
   created_on: 2022-10-18 14:00:00
   updated_on: 2022-10-18 14:00:00
+  start_date: 2022-10-21
   root_id: 30
   lft: 1
   rgt: 2
