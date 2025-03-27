@@ -7,6 +7,7 @@ services:
       - 3000:3000
     volumes:
       - ./config/database.yml:/usr/src/redmine/config/database.yml
+      - ./config/puma.rb:/usr/src/redmine/config/puma.rb
       - ./files:/usr/src/redmine/files
       - ./fixtures:/usr/src/redmine/fixtures
       - ./tasks:/usr/src/redmine/tasks
