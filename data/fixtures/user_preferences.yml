@@ -10,10 +10,25 @@ user_preferences_001:
     - issue_contributed_to
     :my_page_layout:
       left:
+      - documents
+      - news
       - issuesassignedtome
+      - timelog
+      - issuequery__1
+      - issuesupdatedbyme
       right:
+      - activity
       - issuesreportedbyme
-    :my_page_settings: {}
+      - issuequery
+      - issueswatched
+      top:
+      - issuequery__2
+      - calendar
+    :my_page_settings:
+      issuequery:
+        :query_id: '2'
+      issuequery__1:
+        :query_id: '4'
     :recently_used_project_ids: '13,8,7'
     :bookmarked_project_ids: '1,10'
     :gantt_zoom: 4
