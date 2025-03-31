@@ -12,7 +12,7 @@ issues_001:
   fixed_version_id: 1
   author_id: 1
   created_on: 2022-10-18 12:10:00
-  updated_on: 2022-10-18 17:05:00
+  updated_on: 2022-10-23 04:02:00
   start_date: 2022-10-18
   root_id: 1
   lft: 1
@@ -28,7 +28,7 @@ issues_002:
   priority_id: 2
   author_id: 1
   created_on: 2022-10-21 08:00:18
-  updated_on: 2022-10-21 08:00:18
+  updated_on: 2022-10-23 04:28:10
   start_date: 2022-10-18
   root_id: 2
   lft: 1
@@ -44,7 +44,7 @@ issues_003:
   priority_id: 2
   author_id: 1
   created_on: 2022-10-21 08:00:21
-  updated_on: 2022-10-21 08:00:21
+  updated_on: 2022-10-23 04:28:30
   start_date: 2022-10-01
   root_id: 3
   lft: 1
@@ -162,7 +162,7 @@ issues_010:
   fixed_version_id: 2
   author_id: 1
   created_on: 2022-10-21 08:00:42
-  updated_on: 2022-10-21 19:09:00
+  updated_on: 2022-10-23 04:28:00
   start_date: 2022-10-21
   root_id: 10
   lft: 1
@@ -228,7 +228,7 @@ issues_014:
   priority_id: 2
   author_id: 1
   created_on: 2022-10-21 08:00:54
-  updated_on: 2022-10-21 23:47:10
+  updated_on: 2022-10-22 23:47:10
   start_date: 2022-10-25
   root_id: 14
   lft: 1
@@ -603,7 +603,7 @@ issues_039:
   priority_id: 2
   author_id: 1
   created_on: 2022-10-21 08:02:09
-  updated_on: 2022-10-21 08:02:09
+  updated_on: 2022-10-23 04:28:40
   start_date: 2022-10-21
   root_id: 39
   lft: 1
@@ -618,7 +618,7 @@ issues_040:
   priority_id: 2
   author_id: 1
   created_on: 2022-10-21 08:02:12
-  updated_on: 2022-10-21 08:02:12
+  updated_on: 2022-10-23 04:28:20
   start_date: 2022-10-21
   root_id: 40
   lft: 1
