@@ -1,7 +1,10 @@
 services:
   redmine:
+    # .envでRedmineバージョンを切り替えたいので、コンテナ・イメージ名をダミーで指定
+    container_name: storybook-redmine${REDMINE_VERSION}
+    image: storybook-redmine${REDMINE_VERSION}
     build:
-      context: ./docker/redmine50
+      context: ./docker/redmine${REDMINE_VERSION}
     platform: linux/amd64
     ports:
       - 3000:3000
@@ -15,7 +18,9 @@ services:
       - ./sqlite:/usr/src/redmine/sqlite
       # - ./themes:/usr/src/redmine/public/themes # redmine < 6.0
       # - ./themes:/usr/src/redmine/themes # redmine >= 6.0
+    env_file:
+      - .env
     environment:
-      REDMINE_DB_DATABASE: "sqlite/redmine50.db"
+      REDMINE_DB_DATABASE: "sqlite/redmine${REDMINE_VERSION}.db"
       LD_PRELOAD: /usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1
       FAKETIME: 2022-10-23 04:02:00
