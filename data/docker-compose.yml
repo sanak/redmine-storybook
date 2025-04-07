@@ -5,6 +5,9 @@ services:
     image: storybook-redmine-${REDMINE_BRANCH}
     build:
       context: ./docker/${REDMINE_BRANCH}
+      args:
+        REDMINE_BRANCH: ${REDMINE_BRANCH}
+        RAILS_ENV: ${RAILS_ENV}
     platform: linux/amd64
     ports:
       - 3000:3000
@@ -22,5 +25,5 @@ services:
       - .env
     environment:
       REDMINE_DB_DATABASE: "sqlite/redmine${REDMINE_BRANCH}.db"
-      # LD_PRELOAD: /usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1
-      # FAKETIME: 2022-10-23 04:02:00
+      LD_PRELOAD: /usr/lib/x86_64-linux-gnu/faketime/libfaketime.so.1
+      FAKETIME: 2022-10-23 04:02:00

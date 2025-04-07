@@ -52,7 +52,8 @@ _fix_permissions() {
 # allow the container to be started with `--user`
 if [ -n "$isLikelyRedmine" ] && [ "$(id -u)" = '0' ]; then
 	_fix_permissions
-	exec gosu redmine "$BASH_SOURCE" "$@"
+	# for storybook (enable faketime)
+	# exec gosu redmine "$BASH_SOURCE" "$@"
 fi
 
 if [ -n "$isLikelyRedmine" ]; then
