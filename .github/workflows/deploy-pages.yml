@@ -30,9 +30,9 @@ jobs:
         run: |
           npm run build-storybook
           node scripts/update-assets-paths.js storybook-static ${BASE_PATH}
-          npm run build-storybook-redmine60
-          node scripts/update-assets-paths.js storybook-static-redmine60 "${BASE_PATH}/redmine60/"
-          mv storybook-static-redmine60 storybook-static/redmine60
+          npm run build-storybook-60-stable
+          node scripts/update-assets-paths.js storybook-static-60-stable "${BASE_PATH}/60-stable/"
+          mv storybook-static-60-stable storybook-static/60-stable
 
       - uses: actions/upload-pages-artifact@v3
         with:

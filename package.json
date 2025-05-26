@@ -6,8 +6,8 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "storybook-redmine60": "storybook dev -c .storybook-redmine60 -p 6007",
-    "build-storybook-redmine60": "storybook build -c .storybook-redmine60 -o storybook-static-redmine60"
+    "storybook-60-stable": "storybook dev -c .storybook-60-stable -p 6007",
+    "build-storybook-60-stable": "storybook build -c .storybook-60-stable -o storybook-static-60-stable"
   },
   "keywords": [],
   "author": "Tsuyoshi Tsurushima",
